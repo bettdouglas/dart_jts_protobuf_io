@@ -47,4 +47,4 @@ message Geometry {
     }
 }
 
-// protoc --proto_path=lib/serialization --dart_out=lib/serialization/generated lib/serialization/geoprotobuf.proto
+// protoc --proto_path=lib/src/serialization --dart_out=lib/src/serialization/geometry_wkt/ lib/src/serialization/geometry_wkt.proto

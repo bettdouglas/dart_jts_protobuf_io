@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+message GeometryWKT {
+    
+    Type type = 1;
+    string wkt = 2;
+    int32 srid = 3;
+
+    enum Type {
+        POINT = 0;
+        LINESTRING = 1;
+        POLYGON = 2;
+        MULTIPOINT = 3;
+        MULTILINESTRING = 4;
+        MULTIPOLYGON = 5;
+        LINE = 6;
+        TRIANGLE = 7;
+        LINEARRING = 8;
+        GEOMETRYCOLLECTION = 9;
+    }
+}
+
+// protoc -I lib/protos/ lib/protos/alaska.proto --dart_out=grpc:lib/protos/generated

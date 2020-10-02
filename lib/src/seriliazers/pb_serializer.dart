@@ -1,6 +1,6 @@
-import 'package:jts_dart_protobuf/src/serialization/gen/geoprotobuf.pb.dart' as pb;
+import 'package:jts_dart_protobuf/src/serialization/geometry_gen/geoprotobuf.pb.dart' as pb;
 import 'package:dart_jts/dart_jts.dart' as jts;
-import 'package:jts_dart_protobuf/src/serilizers/serilization_handler.dart';
+import 'package:jts_dart_protobuf/src/seriliazers/serilization_impl.dart';
 
 class JTSSerializationHandler extends SerializationHandler {
   @override
